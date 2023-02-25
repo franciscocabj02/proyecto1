@@ -1,0 +1,68 @@
+$color-primario: #4285f4;
+$color-secundario: #757575;
+$color-fondo: #f1f1f1;
+
+h1 {
+  color: $color-primario;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $color-fondo;
+  border: 1px solid $color-secundario;
+  border-radius: 5px;
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: $color-secundario;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    
+    &:focus {
+      outline: none;
+      border-color: $color-primario;
+    }
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: $color-primario;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: darken($color-primario, 10%);
+    }
+  }
+  
+  input[type="reset"] {
+    background-color: $color-secundario;
+    
+    &:hover {
+      background-color: darken($color-secundario, 10%);
+    }
+  }
+}
